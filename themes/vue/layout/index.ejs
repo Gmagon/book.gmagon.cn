@@ -1,0 +1,77 @@
+<div class="sidebar">
+  <div class="sidebar-inner-index">
+    <ul class="main-menu">
+      <%- partial('partials/main_menu', { context: 'sidebar' }) %>
+    </ul>
+  </div>
+</div>
+
+<div id="hero">
+  <div class="inner">
+    <div class="left">
+      <img class="hero-logo" src="<%- url_for("/images/logo.png") %>">
+    </div><div class="right">
+      <h2 class="vue">Vue.js</h2>
+      <h1>
+        渐进式<br>JavaScript 框架
+      </h1>
+      <p>
+        <a class="button" href="<%- url_for("/v2/guide/") %>">起步</a>
+        <a class="button white" href="https://github.com/vuejs/vue" target="_blank">GITHUB</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div id="highlights">
+  <div class="inner">
+    <div class="point">
+      <h2>易用</h2>
+      <p>已经会了HTML,CSS,JavaScript？即刻阅读指南开始构建应用！</p>
+    </div>
+
+    <div class="point">
+      <h2>灵活</h2>
+      <p>简单小巧的核心，渐进式技术栈，足以应付任何规模的应用。</p>
+    </div>
+
+    <div class="point">
+      <h2>性能</h2>
+      <p>
+        20kb min+gzip 运行大小<br>
+        超快虚拟 DOM <br>
+        最省心的优化
+      </p>
+    </div>
+  </div>
+</div>
+
+<div id="sponsors">
+  <div class="inner">
+    <h3>赞助者</h3>
+    <%- partial('partials/sponsors') %>
+    <br>
+    <a class="become-sponsor button white" href="<%- url_for("/support-vuejs/") %>">成为赞助者</a>
+  </div>
+</div>
+
+<div id="footer">
+  <a href="https://www.shuttleworthfoundation.org/fellows/flash-grants/" target="_blank">
+    <img src="<%- url_for("/images/shuttleworth.png") %>" style="width: 200px">
+  </a>
+  <p>遵循 <a href="https://opensource.org/licenses/MIT" target="_blank">MIT 开源协议</a><br>
+  Copyright &copy; 2014-<%- new Date().getFullYear() %> Evan You</p>
+</div>
+
+<script>
+var topScrolled = false
+window.addEventListener('scroll', function () {
+  if (window.pageYOffset > 165 && !topScrolled) {
+    topScrolled = true
+    document.getElementById('mobile-bar').classList.remove('top')
+  } else if (window.pageYOffset <= 165 && topScrolled) {
+    topScrolled = false
+    document.getElementById('mobile-bar').classList.add('top')
+  }
+})
+</script>
