@@ -1,8 +1,8 @@
-# vue.js 中文文档
+# Gmagon 共享文档
 
-https://cn.vuejs.org
+https://books.gmagon.cn
 
-**感谢所有参与翻译的朋友们！**
+**感谢Vue团队所有帮助过我们的朋友们！**
 
 ## 本地预览
 
@@ -18,4 +18,4 @@ $ hexo server
 
 更多使用方法请移步 [hexo](http://hexo.io/) 查阅。
 
-英文原版在 https://github.com/vuejs/vuejs.org/
+**开源协议**: The MIT License (MIT)
