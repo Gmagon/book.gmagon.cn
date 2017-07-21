@@ -152,6 +152,9 @@ feed:
 
 alias:
 # new
+  go/index.html: book_go/index.html
+  py/index.html: book_python/index.html
+  c/index.html: book_c/index.html
   js/index.html: book_javascript/index.html
 # old
   api/index.html: v2/api/index.html
