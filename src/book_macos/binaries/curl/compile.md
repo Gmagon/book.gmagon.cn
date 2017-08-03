@@ -35,6 +35,7 @@ $ otool -L /usr/local/Cellar/curl/7.54.1/bin/curl
 
 
 ```
+使用install_name_tool改变依赖关系
 $ sudo install_name_tool -change /usr/local/Cellar/curl/7.54.1/lib/libcurl.4.dylib @loader_path/../lib/libcurl.4.dylib ./curl
 
 ```
